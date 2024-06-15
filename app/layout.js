@@ -3,8 +3,7 @@ import './component/navbar.module.css'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from './component/footer'
-import { Analytics } from "@vercel/analytics/react"
-
+import { Analytics } from './component/analytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,6 +17,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
