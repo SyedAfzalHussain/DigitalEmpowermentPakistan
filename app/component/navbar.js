@@ -48,6 +48,9 @@ export default function Navbar() {
                         <Link className={styles.link} href="/aims">
                             Aims
                         </Link>
+                        <Link className={styles.link} href="/internships">
+                            Internships
+                        </Link>
                         <Link className={styles.link} href="/woffer">
                             Offers
                         </Link>

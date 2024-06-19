@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { Content } from 'next/font/google'
 
 export default function Home() {
   return (
@@ -16,25 +17,25 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.conContainer}>
-        <div className={styles.conContainerInner}>
-          <div className={styles.conContainerInnerbody}>
-            <h2 style={{ marginBottom: '8px' }}>DEP with The Buraaq Academy</h2>
-            <p style={{ marginBottom: '4px' }}>
-              Digital Empowerment Pakistan &amp; The Buraaq Academy presents before you a
-              webinar on Unlocking Global Opportunities: International Scholarships
-              Guideline Session *Date: 16th-Sept-2023 Time: 7:00 PM - 9:00 PM Platform:
-              Google Meet Apply now and invest in your future!
-              <br />{" "}
-              <span>
-                <a href="https://skillify.pro/webinars/#session">Click here</a>
-              </span>
-            </p>
-          </div>
-          <div className={styles.conContainerInnerImg}>
-            <Image className={styles.rightSideImg} src={"/oppurtunity.jpeg"} width={480} height={263} alt='img' />
-          </div>
+      <div className={styles.conContainerInner}>
+        <div className={styles.conContainerInnerbody}>
+          <h2 style={{ marginBottom: '8px' }}>DEP with The Buraaq Academy</h2>
+          <p style={{ marginBottom: '4px' }}>
+            Digital Empowerment Pakistan &amp; The Buraaq Academy presents before you a
+            webinar on Unlocking Global Opportunities: International Scholarships
+            Guideline Session *Date: 16th-Sept-2023 Time: 7:00 PM - 9:00 PM Platform:
+            Google Meet Apply now and invest in your future!
+            <br />{" "}
+            <span>
+              <a href="https://skillify.pro/webinars/#session">Click here</a>
+            </span>
+          </p>
+        </div>
+        <div className={styles.conContainerInnerImg}>
+          <Image className={styles.rightSideImg} src={"/oppurtunity.jpeg"} width={480} height={263} alt='img' />
         </div>
       </div>
+    </div>
       <div className={styles.conContainer}>
         <div className={[styles.forCol,styles.conContainerInner].join(" ")}>
           <div className={styles.conContainerInnerRightImg}>
@@ -164,7 +165,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-
-
   )
 }
