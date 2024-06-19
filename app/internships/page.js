@@ -36,7 +36,7 @@ export default function Home() {
             </div>
             <div className={styles.conContainer}>
                 <div style={{ flexWrap: 'wrap' }} className={[styles.conContainerInner, styles.cities].join(" ")}>
-                    <div > <Image className={styles.rightSideImg} src={"/Virtual1.jpg"} width={480} height={263} alt='img' />
+                    <div > <Image className={styles.rightSideImg} src={"/virtual1.jpg"} width={480} height={263} alt='img' />
                         <p className={styles.buttonApply} onClick={() => openForm('https://forms.gle/apRQ6dzk4GLgvJGk8')}>Reg Now </p>
 
                     </div>
